@@ -77,6 +77,7 @@ class linkList():
         
     def deleteFromBeginning(self):
         self.head = self.head.next
+        self.size -= 1
         return
               
     def deleteFromLast(self):
@@ -84,6 +85,7 @@ class linkList():
         while getToLast.next != None:
             prev = getToLast
             getToLast = getToLast.next
+            self.size -= 1
         prev.next = None
         return
     
